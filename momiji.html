@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>紅葉</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .album-photo img {
+      display: block;
+    }
+
+    .album-photo p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Kouichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin: 24px 0 32px 0; text-align: center; font-size: 0.98em;">
+    <a href="index.html" style="color: #226d44; text-decoration: none;">トップページ</a>
+    &nbsp;&gt;&nbsp;
+    <a href="album3.html" style="color: #226d44; text-decoration: none;">風景アルバム</a>
+    &nbsp;&gt;&nbsp;
+    <span style="color: #888;">紅葉</span>
+  </nav>
+  <main>
+    <section class="album">
+      <h2 style="text-align: center;">紅葉</h2>
+      <p style="display: block; text-align: center; font-weight: bold; margin: 0 0 8px 0; width: 100%;">
+      </p><br>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555; font-size: 14px;">
+        紅葉の写真を集めたアルバムです。秋の風情を感じていただければ幸いです。
+      </p>
+      <div class="album-list" style="display: flex; gap: 24px; flex-wrap: wrap;">
+        <!-- ここから写真リスト -->
+        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
+          <img src="images/nature/_A7C3087.JPG" alt="紅葉写真１" style="width:100%; border-radius:10px;">
+        </div>
+        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
+          <img src="images/nature/IMG_9454.jpg" alt="紅葉写真２" style="width:100%; border-radius:10px;">
+        </div>
+        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
+          <img src="images/nature/IMG_9806.JPG" alt="紅葉写真３" style="width:100%; border-radius:10px;">
+        </div>
+        <!-- 他にも img フォルダ内の画像があれば同様に追加してください -->
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="sns-footer" style="text-align: right;">
+      <a href="https://www.instagram.com/lxo1c_1n19/" target="_blank" rel="noopener" class="sns-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@sou_photo20" target="_blank" rel="noopener" class="sns-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <!-- 必要に応じて他SNSも追加可能 -->
+    </div>
+    <p>&copy; 2025 Kouichi Nakahara</p>
+  </footer>
+</body>
+</html>

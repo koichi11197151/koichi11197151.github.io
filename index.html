@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>作品紹介ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dela+Gothic+One&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <style>
+    /* 画像の親aタグにrelative、imgにtransition、hover時に暗いオーバーレイを表示 */
+    .work-item a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .work-item a img {
+      transition: filter 0.3s, transform 0.3s;
+      display: block;
+    }
+
+    .work-item a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.18);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .work-item a:hover img,
+    .work-item a:focus img {
+      filter: brightness(0.7);
+      transform: scale(1.03);
+    }
+
+    .work-item a:hover::after,
+    .work-item a:focus::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="heroabout">
+      <section id="about" class="about">
+      <h2>自己紹介</h2>
+      <img src="images/A7C02531.jpg" alt="コウイチの写真" style="width:200px; height:200px; border-radius: 50%; object-fit: cover; display: block; margin: 16px auto; margin-bottom: 130px;">
+      <p>
+        こんにちは。コウイチです。<br>
+        趣味は風景撮影と動画編集です。<br>
+        独自の世界観と記憶を大切に、見る人の心に残る作品を目指しています。
+      </p>
+    </section>
+    <section class="hero">
+      <h1>「わたしらしくあるために」</h1>
+      <p class="catch">「個性」をカタチに。<br>表現に、記憶と個性をのせて。</p>
+      <a href="#works" class="btn">作品を見る</a>
+      <section class="skill">
+      <h1 id="skill">取得資格一覧</h1>
+      <div class="skilldiv">
+      <p class="skillp">2021年&nbsp;7月&nbsp; 全国工業高等学校長協会&nbsp; 情報技術検定2級</p>
+      <p class="skillp">2021年&nbsp;7月&nbsp; 全国工業高等学校長協会&nbsp; パソコン利用技術検定2級</p>
+      <p class="skillp">2022年&nbsp;8月&nbsp; IPA&nbsp; ITパスポート試験</p>
+      <p class="skillp">2025年&nbsp;8月&nbsp; CG-ARTS協会&nbsp; Webデザイナー検定 ベーシック</p>
+      <p class="skillp">2025年&nbsp;9月&nbsp; サーティファイ&nbsp; Illustrator®クリエイター能力認定試験 スタンダード</p>
+      <p class="skillp">2025年&nbsp;9月&nbsp; サーティファイ&nbsp; ビジネス著作権検定® 初級</p>
+      <p class="skillp">2025年10月&nbsp; サーティファイ&nbsp; Webクリエイター能力認定試験/HTML5 エキスパート</p>
+      <p class="skillp">2025年12月&nbsp; 色彩検定協会&nbsp; 色彩検定3級</p>
+      </div>
+      </section>
+    </section>
+    </div>
+    <section id="works" class="works">
+      <h2 style="text-align: center; width: 100%;">
+        制作実績
+        <span style="font-size: 1rem; font-weight: normal; color: #3cb371; display: block; margin-top: 8px;">
+          （画像をクリックするとアルバムが見れます）
+        </span>
+      </h2>
+      <div class="work-list" style="display: flex; gap: 24px; flex-wrap: wrap;">
+        <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+          <a href="album1.html">
+            <img src="img/A7C06451.jpg" alt="神社アルバム" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio:16/9; object-fit:cover;">
+          </a>
+          <p style="text-align: center;">神社アルバム<br><span style="font-size:0.9em; color:#888;">このアルバムには色々な神社の写真があります。</span></p>
+        </div>
+
+        <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+          <a href="album2.html">
+            <img src="images/doresu/A7C06534.JPG" alt="ドレスショーアルバム" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio:16/9; object-fit:cover;">
+          </a>
+          <p style="text-align: center;">YICドレスショーアルバム<br><span style="font-size:0.9em; color:#888;">このアルバムにはYICのドレスショーの写真があります。</span></p>
+        </div>
+
+         <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+          <a href="album3.html">
+            <img src="images/nature/A7C01058 1.png" alt="風景アルバム" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio:16/9; object-fit:cover;">
+          </a>
+          <p style="text-align: center;">風景アルバム<br><span style="font-size:0.9em; color:#888;">このアルバムには風景の写真があります。</span></p>
+        </div>
+
+         <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+          <a href="album4.html">
+            <img src="images/weding/A7C09380.png" alt="結婚式アルバム" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio:16/9; object-fit:cover;">
+          </a>
+          <p style="text-align: center;">結婚式アルバム<br><span style="font-size:0.9em; color:#888;">このアルバムには結婚式の写真があります。</span></p>
+          </div>
+
+
+        <!-- 他の作品も同様に追加 -->
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>お問い合わせ</h2>
+      <p>
+        お仕事のご依頼・ご相談は
+        <a href="mailto:koichi715139@gmail.com">メール</a>
+        からお気軽にどうぞ。
+      </p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="sns-footer" style="text-align: right;">
+      <a href="https://www.instagram.com/lxo1c_1n19/" target="_blank" rel="noopener" class="sns-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@sou_photo20" target="_blank" rel="noopener" class="sns-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <!-- 必要に応じて他SNSも追加可能 -->
+    </div>
+    <p>&copy; 2025 Kouichi Nakahara</p>
+  </footer>
+</body>
+</html>
