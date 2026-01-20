@@ -22,7 +22,7 @@ header {
   font-family: 'Shippori Mincho', serif;
   font-size: 2.2rem;
   color: #234c2f;
-  letter-spacing: 2px;
+  letter-spacing: -1px;
   font-weight: 700;
 }
 
@@ -83,6 +83,7 @@ nav a:hover {
   display: inline-block;
   padding: 0.7em 2em;
   border-radius: 16px;
+  text-align: center;
 }
 
 .btn {
@@ -136,99 +137,7 @@ section > form {
   max-width: 100%;
 }
 
-@media (max-width: 1200px) {
-  section {
-    max-width: 98vw;
-    padding: 0 16px;
-  }
-}
 
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px 16px 0 16px;
-  }
-  .logo {
-    font-size: 1.7rem;
-    margin-bottom: 12px;
-  }
-  nav ul {
-    gap: 20px;
-  }
-  .hero {
-    padding: 32px 0 28px 0;
-    max-width: 98vw;
-    border-radius: 18px;
-  }
-  section {
-    max-width: 98vw;
-    padding: 0 10px;
-    border-radius: 16px;
-  }
-  .work-list {
-    gap: 12px;
-  }
-  .work-item {
-    min-width: 140px;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    padding: 16px 6vw 0 6vw;
-  }
-  .logo {
-    font-size: 1.2rem;
-  }
-  nav ul {
-    gap: 12px;
-  }
-  nav a {
-    font-size: 1rem;
-    padding-bottom: 1px;
-  }
-  .hero {
-    margin: 36px 0 28px 0;
-    padding: 18px 0 16px 0;
-    font-size: 0.95rem;
-  }
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-  .catch {
-    font-size: 1rem;
-    padding: 0.5em 1em;
-  }
-  .btn {
-    font-size: 1rem;
-    padding: 0.5em 1.2em;
-    border-radius: 16px;
-  }
-  section {
-    margin: 28px auto;
-    padding: 0 2vw;
-    border-radius: 10px;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  .work-list {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .work-item {
-    flex: 1 1 100%;
-    min-width: 0;
-    padding: 12px;
-    font-size: 0.95rem;
-  }
-  footer {
-    font-size: 0.9rem;
-    padding: 18px 0 10px 0;
-    margin-top: 28px;
-  }
-}
 
 .sns-link {
   color: #3cb371;
@@ -367,7 +276,7 @@ section > form {
   margin-top: 0px;
   font-family: 'Shippori Mincho', serif;
   font-size: 2.2rem;
-  letter-spacing: 2px;
+  letter-spacing: -1px;
   font-weight: 700;
 }
 
@@ -415,4 +324,181 @@ section > form {
   justify-content: center;
   color: #fff;
   margin-bottom: -50px;
+}
+.hero{
+  margin-top: 40px;
+}
+
+
+
+
+
+/* レスポンシブコード */
+
+@media (max-width: 900px) {
+  .logo{
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size: 20px !important;
+    letter-spacing: -1px;
+  }
+  nav{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  nav a{
+    font-size: 0.6em;
+  }
+  nav ul{
+    gap: 2em;
+  }
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px 0 16px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .hero {
+    padding: 32px 0 28px 0;
+    max-width: 98vw;
+    border-radius: 18px;
+  }
+  section {
+    max-width: 98vw;
+    padding: 0 10px;
+    border-radius: 16px;
+  }
+  .work-list {
+    gap: 12px;
+  }
+  .work-item {
+    min-width: 140px;
+  }
+  .respo1{
+    display: flex;
+    flex-direction: column;
+  }
+  .heroabout{
+    display: flex;
+    flex-direction: column;
+  }
+  .about h2{
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .about img{
+    width: 120px !important;
+    height: auto !important;
+  }
+  .about p{
+    margin-top: -90px;
+    font-size: 10px;
+  }
+  .about{
+    margin: 0 auto;
+  }
+  .main{
+    max-width: 90vw;
+  }
+  .hero h1{
+    margin-bottom: 40px;
+    margin-top: -60px;
+    font-size: 16px;
+    margin-right: 0px;
+  }
+  .catch{
+    font-size: 10px;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 900px) {
+  /* セクション全体の巨大な余白をリセット */
+  section {
+    max-width: 100vw !important; /* 画面幅いっぱいにする */
+    padding: 20px 15px !important; /* 上下20px、左右15pxの最低限の余白にする */
+    margin: 20px auto !important;
+  }
+
+  /* 取得資格一覧の中身を横いっぱいに広げる */
+  .skilldiv {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 文字の折り返しを防ぎ、読みやすくする */
+  .skillp {
+    font-size: 14px; /* スマホで見やすいサイズ */
+    white-space: normal; /* 自動折り返しを許可 */
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  /* 「私らしく〜」のキャッチコピー部分 */
+  .catch {
+    padding: 10px 15px !important; /* 内側の余白を減らす */
+    width: 90% !important; /* 幅を広げる */
+    font-size: 10px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  .skill h1{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .skilldiv p{
+    font-size: 8px;
+  }
+  .works h2{
+    font-size: 20px;
+  }
+  .works span{
+    font-size: 10px !important;
+  }
+  .work-item p{
+    font-size: 10px;
+  }
+  .contact h2{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .contact p{
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  .footer .logo{
+    margin-top: -20px;
+  }
+  .footer nav{
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+  .footer nav a{
+    font-size: 0.6em;
+  }
+  .footer nav ul{
+    gap: 2em;
+  }
+  .sns-footer a{
+    font-size: 15px !important;
+  }
+  .footer p{
+    font-size: 8px;
+    margin-top: 0px;
+  }
 }
