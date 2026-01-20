@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>風景 アルバム</title>
+  <title>結婚式アルバム</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     .album-photo p {
-      text-align: center;
       margin-left: auto;
       margin-right: auto;
       width: 100%;
     }
-    .album-photo p:first-of-type {
-      font-size: 1.2em;
+    .album-photo p.photo-title {
+      text-align: center;
+      font-size: 1.1em;
       font-weight: bold;
       margin-top: 8px;
       margin-bottom: 4px;
+    }
+    .album-photo p.photo-desc {
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 0;
+      color: #333;
+    }
+    .bunsyou{
+      margin-top: -40px;
+      margin-bottom: 60px;
+    }
+    .yic{
+      margin-bottom: 30px;
     }
   </style>
 </head>
@@ -37,50 +50,25 @@
   <nav class="breadcrumb" aria-label="パンくずリスト" style="margin: 24px 0 32px 0; text-align: center; font-size: 0.98em;">
     <a href="index.html" style="color: #226d44; text-decoration: none;">トップページ</a>
     &nbsp;&gt;&nbsp;
-    <span style="color: #888; ">風景アルバム</span>
+    <span style="color: #888;">結婚式アルバム<p>開催日 : 2025年10月12日</p></span>
   </nav>
-  <main>
+  <main> 
     <section class="album">
-      <div class="nocaption">
-      <h2>風景アルバム</h2>
-      </div>
+      <h2 class="yic" style="text-align: center;">結婚式アルバム</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555;">
+        ウェディングコートエミリアにて撮影・動画制作<br>
+        初めて結婚式撮影とED動画の作成をしたので<br>かなり緊張したのを未だに覚えています。
+      </p>
       <div class="album-list" style="display: flex; gap: 24px; flex-wrap: wrap;">
-        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <a href="yuuhi.html">
-            <img src="images/nature/A7C01058 1.png" alt="夕日岬" style="width:100%; border-radius:10px; cursor:pointer;">
+        <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+            <video src="img/結婚式ムービー.mp4" 
+              controls 
+              style="width:100%; border-radius:10px; aspect-ratio:16/9; object-fit:cover;">
+              お使いのブラウザは動画再生に対応していません。
+            </video>
           </a>
-          <p style="font-size: 1.2em; font-weight: bold; margin: 8px 0 10px 0;">
-            夕日岬
-          </p>
-          <p class="cap" style="margin: 0; color: #666; font-size: 0.95em;">〒744-0001 山口県下松市笠戸島</p>
+          <p style="text-align: center;">2025年10月12日に実際に結婚式の撮影〜映像まで担当した時の動画です<br><span style="font-size:0.9em; color:#888;"></span></p>
         </div>
-
-        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <a href="momiji.html">
-            <img src="images/nature/IMG_9806.JPG" alt="紅葉" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio: 3 / 2;">
-          </a>
-          <p style="margin: 8px 0 10px 0; font-weight: bold;">紅葉</p>
-          <p class="cap" style="margin: 0; color: #666; font-size: 0.95em;"></p>
-        </div>
-
-        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <a href="sea.html">
-            <img src="images/nature/sea/A7C08835.jpg" alt="海" style="width:100%; border-radius:10px; cursor:pointer; aspect-ratio: 3 / 2;">
-          </a>
-          <p style="margin: 8px 0 10px 0; font-weight: bold;">海</p>
-          <p class="cap" style="margin: 0; color: #666; font-size: 0.95em;"></p>
-        </div>
-
-                <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <a href="akiyosidai.html">
-            <img src="images/nature/akiyosi/IMG_6369.JPG" alt="秋吉台" style="width:100%; border-radius:10px; cursor:pointer;">
-          </a>
-          <p style="font-size: 1.2em; font-weight: bold; margin: 8px 0 10px 0;">
-            秋吉台
-          </p>
-          <p class="cap" style="margin: 0; color: #666; font-size: 0.95em;">山口県美祢市秋芳町秋吉周辺</p>
-        </div>
-        <!-- 他のロケ地写真も同様に追加 -->
       </div>
     </section>
   </main>
