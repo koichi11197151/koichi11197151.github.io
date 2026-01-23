@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Shippori Mincho', 'Nanum Myeongjo', serif;
+  background: #fff;
+  color: #234c2f;
+  letter-spacing: 0.02em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 0 48px;
+  border-bottom: 2px solid #ACE89E;
+  background: #fff;
+  box-shadow: none;
+}
+
+.logo {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2.2rem;
+  color: #234c2f;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-family: 'Shippori Mincho', serif;
+  color: #234c2f;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  color: #3cb371;
+  border-bottom: 1.5px solid #3cb371;
+}
+
+.hero {
+  text-align: center;
+  margin: 80px 0 60px 0;
+  padding: 48px 0 40px 0;
+  background: #fff;
+  border-radius: 32px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hero::before, .hero::after {
+  display: none;
+}
+
+.hero h1 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  color: #234c2f;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.catch {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1rem;
+  margin-bottom: 2em;
+  color: #234c2f;
+  background: rgba(255,255,255,0.95);
+  display: inline-block;
+  padding: 0.7em 2em;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #3cb371;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.1rem;
+  padding: 0.7em 2em;
+  border-radius: 24px;
+  text-decoration: none;
+  border: 1.5px solid #3cb371;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #3cb371;
+  color: #fff;
+}
+
+section {
+  margin: 60px auto;
+  max-width: 1100px;
+  padding: 0 48px;
+  background: #fff;
+  border-radius: 24px;
+  /* text-align: center; 削除またはコメントアウト */
+}
+
+h2 {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  color: #234c2f;
+  margin-bottom: 0.5em;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+section > p,
+section > div,
+section > ul,
+section > form {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+
+
+.sns-link {
+  color: #3cb371;
+  margin-left: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sns-link:hover {
+  color: #e1306c;
+}
+.sns-link .fa-instagram {
+  font-size: 1.3em;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.sns-footer {
+  text-align: right;
+  margin-bottom: 12px;
+}
+.sns-footer .sns-link {
+  color: #3cb371;
+  margin: 0 10px;
+  font-size: 1.7rem;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+.sns-footer .sns-link:hover {
+  color: #e1306c;
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.work-item {
+  flex: 1 1 45%;
+  min-width: 240px;
+}
+
+/* アルバム内の画像クリック時に暗くなるエフェクト */
+.album-photo a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.album-photo a img {
+  transition: filter 0.3s, transform 0.3s;
+  display: block;
+}
+
+.album-photo a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.18);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.album-photo a:hover img,
+.album-photo a:focus img {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+}
+
+.album-photo a:hover::after,
+.album-photo a:focus::after {
+  opacity: 1;
+}
+.a{
+  text-decoration: none;  
+}
+.about h2{
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+.works h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about p{
+  margin-bottom: 50px;
+}
+.contact h2{
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.contact p{
+  margin-bottom: 200px;
+}
+.heroabout{
+  display: flex;
+}
+.hero{
+  margin-top: 60px;
+  margin-right: 80px;
+}
+.hero h1{
+  margin-top: 0px;
+}
+.skilldiv{
+  text-align: left
+}
+.skilldiv{
+  margin-top: 50px;
+  font-size: 0.8em;
+  margin-left: 50px;
+}
+.hero, .about{
+  margin-top: 20px;
+}
+.main{
+  max-width: 95vw;
+  margin: 0 auto;
+}
+.about{
+  margin-left: 30px;
+}
+/* 1. フッター全体の基本設定 */
+.footer {
+  background-color: #234c2f;
+  padding: 60px 20px; /* 上下に余白を作って中身を押し出す */
+  color: #fff;        /* 全体の文字色を白に */
+}
+
+/* 2. ロゴの設定（文字色を白に変更） */
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.footer .logo a {
+  color: #fff !important; /* 強制的に白にする */
+  text-decoration: none;
+}
+
+/* 3. ナビゲーション（メニュー）の設定 */
+.footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* 150pxだと広すぎて画面からはみ出している可能性があるので少し詰めました */
+}
+
+.footer nav a {
+  font-family: 'Shippori Mincho', serif;
+  color: #fff ; /* ★ここを白に変更 */
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 2px;
+}
+.footer nav a:hover {
+  color: #3cb371;
+  border-bottom: 1.5px solid #3cb371;
+}
+
+/* 4. SNSアイコンとコピーライト */
+
+.footer .sns-link {
+  color: #fff !important;
+}
+.sns-link:hover {
+  color: #3cb371 !important; /* メニューと同じ明るい緑 */
+  transition: color 0.3s;    /* じわっと色を変える */
+}
+
+.footer p {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: -50px;
+}
+.hero{
+  margin-top: 40px;
+}
+
+
+
+
+
+/* レスポンシブコード */
+
+@media (max-width: 900px) {
+  .logo{
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size: 20px !important;
+    letter-spacing: -1px;
+  }
+  nav{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  nav a{
+    font-size: 0.6em;
+  }
+  nav ul{
+    gap: 2em;
+  }
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px 0 16px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .hero {
+    padding: 32px 0 28px 0;
+    max-width: 98vw;
+    border-radius: 18px;
+  }
+  section {
+    max-width: 98vw;
+    padding: 0 10px;
+    border-radius: 16px;
+  }
+  .work-list {
+    gap: 12px;
+  }
+  .work-item {
+    min-width: 140px;
+  }
+  .respo1{
+    display: flex;
+    flex-direction: column;
+  }
+  .heroabout{
+    display: flex;
+    flex-direction: column;
+  }
+  .about h2{
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .about img{
+    width: 120px !important;
+    height: auto !important;
+  }
+  .about p{
+    margin-top: -90px;
+    font-size: 10px;
+  }
+  .about{
+    margin: 0 auto;
+  }
+  .main{
+    max-width: 90vw;
+  }
+  .hero h1{
+    margin-bottom: 40px;
+    margin-top: -60px;
+    font-size: 16px;
+    margin-right: 0px;
+  }
+  .catch{
+    font-size: 10px;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 900px) {
+  /* セクション全体の巨大な余白をリセット */
+  section {
+    max-width: 100vw !important; /* 画面幅いっぱいにする */
+    padding: 20px 15px !important; /* 上下20px、左右15pxの最低限の余白にする */
+    margin: 20px auto !important;
+  }
+
+  /* 取得資格一覧の中身を横いっぱいに広げる */
+  .skilldiv {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 文字の折り返しを防ぎ、読みやすくする */
+  .skillp {
+    font-size: 14px; /* スマホで見やすいサイズ */
+    white-space: normal; /* 自動折り返しを許可 */
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  /* 「私らしく〜」のキャッチコピー部分 */
+  .catch {
+    padding: 10px 15px !important; /* 内側の余白を減らす */
+    width: 90% !important; /* 幅を広げる */
+    font-size: 10px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  .skill h1{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .skilldiv p{
+    font-size: 8px;
+  }
+  .works h2{
+    font-size: 20px;
+  }
+  .works span{
+    font-size: 10px !important;
+  }
+  .work-item p{
+    font-size: 10px;
+  }
+  .contact h2{
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .contact p{
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  .footer .logo{
+    margin-top: -20px;
+  }
+  .footer nav{
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+  .footer nav a{
+    font-size: 0.6em;
+  }
+  .footer nav ul{
+    gap: 2em;
+  }
+  .sns-footer a{
+    font-size: 15px !important;
+  }
+  .footer p{
+    font-size: 8px;
+    margin-top: 0px;
+  }
+  .breadcrumb span{
+    font-size: 10px;
+    padding-bottom: 100px !important;
+  }
+  .breadcrumb span p{
+    font-size: 8px;
+  }
+  .album h2{
+    font-size: 20px;
+  }
+  .album{
+    max-width: 90vw;
+  }
+  .album p{
+    font-size: 10px;
+  }
+  .work-item video{
+    max-width: 90vw;
+  }
+  .work-item p{
+    font-size: 12px;
+  }
+  .work-item p span{
+    font-size: 8px !important;
+  }
+  .nocaption{
+    margin-bottom: 50px;
+  }
+  .album-photo{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .album-photo p{
+    font-size: 14px !important;
+  }
+  .album-photo .cap{
+    font-size: 10px !important;
+  }
+  .album-photo{
+    margin-bottom: 20px;
+  }
+  .album .cap{
+    font-size: 10px !important;
+  }
+  .album .setumei{
+    max-width: 80vw;
+  }
+}
+.logo {
+  letter-spacing: -1px;
+  }

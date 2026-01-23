@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>元乃隅神社</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .album-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      margin-top: 32px;
+      width: 100%;
+    }
+    .album-row {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      width: 100%;
+    }
+    .album-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 520px;
+      max-width: 95vw;
+      box-sizing: border-box;
+    }
+    .album-photo img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .album-photo .caption {
+      width: 100%;
+      margin-top: 24px;
+      text-align: center;
+    }
+    @media (max-width: 1100px) {
+      .album-row {
+        gap: 24px;
+      }
+      .album-photo {
+        width: 45vw;
+        max-width: 95vw;
+      }
+      .album-photo img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 800px) {
+      .album-row {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+      }
+      .album-photo {
+        width: 90vw;
+        max-width: 98vw;
+      }
+    }
+    @media (max-width: 500px) {
+      .album-photo {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 0 4vw;
+      }
+      .album-photo img {
+        border-radius: 10px;
+      }
+      .album-photo .caption {
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin: 24px 0 32px 0; text-align: center; font-size: 0.98em;">
+    <a href="index.html" style="color: #226d44; text-decoration: none;">トップページ</a>
+    &nbsp;&gt;&nbsp;
+    <a href="album1.html" style="color: #226d44; text-decoration: none;">神社アルバム</a>
+    &nbsp;&gt;&nbsp;
+    <span style="color: #888;">元乃隅神社<p>撮影日 : 2024年7月21日</p></span>
+  </nav>
+  <main>
+    <section class="album">
+      <div style="width:100%; display:flex; justify-content:center;">
+        <div style="text-align: center;">
+          <h2 style="text-align: center;">元乃隅神社</h2>
+          <p style="display: block; text-align: center; font-weight: bold; margin: 0 0 8px 0; width: 100%;">
+            〒759-4712 山口県長門市油谷津黄498
+          </p><br>
+          <div class="setumei">
+          <p class="cap" style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555; font-size: 14px;">
+            元乃隅神社は、123基の赤い鳥居が<br>並ぶ絶景スポットとして有名です。<br>
+            日本海を望む断崖に立ち、海と鳥居のコントラストが美しく、<br>パワースポットとしても人気です。
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="album-list" style="display: flex; flex-direction: column; gap: 32px; align-items: center; margin-top: 32px;">
+        <!-- 上段：2枚横並び -->
+        <div class="album-row" style="display: flex; gap: 48px; justify-content: center;">
+          <!-- 1枚目 -->
+          <a href="img/A7C00390.JPG">
+          <div class="album-photo" style="display: flex; flex-direction: column; align-items: center; width: 520px;">
+            <img src="img/A7C00390.JPG" alt="元乃隅神社 本殿" style="width:50%; max-width:500px; height:auto; object-fit:contain; border-radius:18px;">
+            <div class="caption" style="width:100%; margin-top: 24px; text-align: center; color: black; ">
+            </div>
+          </div>
+          </a>
+          <!-- 2枚目 -->
+          <a href="img/A7C00404.JPG">
+          <div class="album-photo" style="display: flex; flex-direction: column; align-items: center; width: 520px;">
+            <img src="img/A7C00404.JPG" alt="元乃隅神社 参道" style="width:50%; max-width:500px; height:auto; object-fit:contain; border-radius:18px;">
+            <div class="caption" style="width:100%; margin-top: 24px; text-align: center; color: black;">
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- 下段：1枚中央 -->
+        <a href="img/A7C00362.JPG">
+        <div style="display: flex; justify-content: center; margin-top: 40px;">
+          <div class="album-photo" style="display: flex; flex-direction: column; align-items: center; width: 520px;">
+            <img src="img/A7C00362.JPG" alt="元乃隅神社" style="width:100%; max-width:500px; height:auto; object-fit:contain; border-radius:18px;">
+            <div class="caption" style="width:100%; margin-top: 24px; text-align: center; color: black;">
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+    <div class="logo">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="sns-footer" style="text-align: right;">
+      <a href="https://www.instagram.com/lxo1c_1n19/" target="_blank" rel="noopener" class="sns-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@sou_photo20" target="_blank" rel="noopener" class="sns-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <!-- 必要に応じて他SNSも追加可能 -->
+    </div>
+    <p>&copy; 2025 Kouichi Nakahara</p>
+  </footer>
+</body>
+</html>
