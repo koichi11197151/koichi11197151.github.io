@@ -552,3 +552,34 @@ section > form {
 .logo {
   letter-spacing: -1px;
   }
+.album-photoo{
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.album-phoo{
+  margin-bottom: 70px;
+}
+.album-phoo p{
+  display: flex;
+  justify-content: center;
+}
+.nocaption{
+  margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .album-phoo{
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .album-phoo p{
+  display: flex;
+  justify-content: center;
+}
+.album-photoo{
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+}
