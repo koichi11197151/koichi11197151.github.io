@@ -583,3 +583,12 @@ section > form {
   margin-bottom: 50px;
 }
 }
+.contesturl a:hover{
+  text-decoration: underline !important;
+  color: #3cb371 !important;
+}
+@media (max-width: 1100px) {
+  .album-photo .tsub{
+  font-size: 8px !important;
+}
+}
