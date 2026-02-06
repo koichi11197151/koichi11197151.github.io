@@ -586,6 +586,9 @@ section > form {
   width: 100% !important;
   height: auto !important;
 }
+.moviep p{
+  font-size: 8px !important;
+}
 }
 .contesturl a:hover{
   text-decoration: underline !important;
