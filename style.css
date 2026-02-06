@@ -582,6 +582,10 @@ section > form {
   margin: 0 auto;
   margin-bottom: 50px;
 }
+.op{
+  width: 100% !important;
+  height: auto !important;
+}
 }
 .contesturl a:hover{
   text-decoration: underline !important;
