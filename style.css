@@ -589,6 +589,12 @@ section > form {
 .moviep p{
   font-size: 8px !important;
 }
+.breadcrumb{
+  font-size: 8px !important;
+}
+.breadcrumb span{
+  font-size: 5px !important;
+}
 }
 .contesturl a:hover{
   text-decoration: underline !important;
