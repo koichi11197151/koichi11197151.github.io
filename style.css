@@ -710,12 +710,16 @@ main{
   .header-nav{
     margin: 0 auto;
     margin-bottom: 20px;
+    padding-right: 25px !important;
   }
 }
 @media (max-width: 767px) {
   .hamburger{
     margin-right: 40px;
   }
+}
+header .logo{
+  padding-right: 30px !important;
 }
 
 
