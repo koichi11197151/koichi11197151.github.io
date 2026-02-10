@@ -718,7 +718,9 @@ main{
     margin-right: 40px;
   }
 }
-
+header .logo{
+  padding-right: 30px !important;
+}
 
 
 
