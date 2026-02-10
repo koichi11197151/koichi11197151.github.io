@@ -637,6 +637,7 @@ section > form {
   .hamburger {
     display: block;
     margin-left: auto;
+    margin-right: 30px !important;
   }
 
   /* ヘッダー専用ナビ */
@@ -701,7 +702,10 @@ header {
   background: #fff;
 }
 main{
-  padding-top: 80px;
+  padding-top: 40px;
+}
+.mainmain{
+  padding-top: 40px;
 }
 .header-nav{
   margin-right: 100px;
@@ -714,13 +718,18 @@ main{
   }
 }
 @media (max-width: 767px) {
-  .hamburger{
-    margin-right: 40px;
+  main{
+    margin-top: 0px;
   }
 }
 header .logo{
   padding-right: 30px !important;
 }
+.breadcrumb{
+  margin-top: 100px !important;
+  margin-bottom: -60px !important;
+}
+
 
 
 
