@@ -590,10 +590,10 @@ section > form {
   font-size: 8px !important;
 }
 .breadcrumb{
-  font-size: 8px !important;
+  font-size: 12px !important;
 }
 .breadcrumb span{
-  font-size: 5px !important;
+  font-size: 7px !important;
 }
 }
 .contesturl a:hover{
@@ -605,3 +605,91 @@ section > form {
   font-size: 8px !important;
 }
 }
+.hamburger {
+  display: none;
+  width: 32px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #234c2f;
+  transition: 0.3s;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 11px; }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+@media (max-width: 767px) {
+
+  header {
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* ヘッダー専用ナビ */
+  .header-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-top: 1px solid #ACE89E;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header-nav li {
+    border-bottom: 1px solid #ACE89E;
+  }
+
+  .header-nav a {
+    display: block;
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .header-nav.active {
+    display: block;
+  }
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 11px;
+}
+.hamburger{
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.logo a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+

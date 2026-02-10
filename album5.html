@@ -37,14 +37,21 @@
 <body>
   <header>
     <div class="logo">
-      <a href="index.html" style="color: inherit; text-decoration: none;">Koichi Nakahara</a>
+      <a href="index.html">Koichi Nakahara</a>
     </div>
-    <nav>
+
+    <button class="hamburger" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header-nav">
       <ul>
-        <li><a href="index.html#about">自己紹介</a></li>
-        <li><a href="index.html#skill">取得資格一覧</a></li>
-        <li><a href="index.html#works">制作実績</a></li>
-        <li><a href="index.html#contact">お問い合わせ</a></li>
+       <li><a href="#about">自己紹介</a></li>
+       <li><a href="#skill">取得資格一覧</a></li>
+        <li><a href="#works">制作実績</a></li>
+       <li><a href="#contact">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -89,7 +96,17 @@
       </a>
       <!-- 必要に応じて他SNSも追加可能 -->
     </div>
-    <p>&copy; 2025 Kouichi Nakahara</p>
+    <p>&copy; 2026 Koichi Nakahara</p>
   </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.header-nav');
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+  </script>
 </body>
 </html>
