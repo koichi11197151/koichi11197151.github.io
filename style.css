@@ -729,6 +729,41 @@ header .logo{
   margin-top: 100px !important;
   margin-bottom: -60px !important;
 }
+.hoppu{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90vw;
+  margin-top: 70px !important;
+}
+@media (max-width: 900px) {
+  .hoppu1{
+    margin-right: 0px !important;
+  }
+  .hoppu2{
+    margin-left: 0px !important;
+  }
+  .hoppu1 .hoppubig .tsub{
+    font-size: 14px !important;
+  }
+  .hoppu2 .hoppubig .tsub{
+    font-size: 14px !important;
+  }
+  .hoppu3 .hoppubig .tsub{
+    font-size: 14px !important;
+  }
+  .hoppu{
+    margin-top: 30px !important;
+  }
+  .about h2{
+  margin-top: 0px;
+  }
+  .contesturl a{
+    font-size: 12px !important;
+  }
+}
+
 
 
 
