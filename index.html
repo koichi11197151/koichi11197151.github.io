@@ -221,6 +221,15 @@
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
   });
+  const navLinks = document.querySelectorAll('.header-nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+  });
+});
+
 
   window.onload = function() {
   const loader = document.getElementById("loading");
