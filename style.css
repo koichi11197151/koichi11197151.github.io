@@ -204,8 +204,7 @@ section > form {
 
 .album-photo a:hover img,
 .album-photo a:focus img {
-  filter: brightness(0.7);
-  transform: scale(1.03);
+  filter: brightness(0.9);
 }
 
 .album-photo a:hover::after,
@@ -763,6 +762,149 @@ header .logo{
     font-size: 12px !important;
   }
 }
+.hero .btn {
+  
+  animation: floatAnime 2s ease-in-out infinite;
+}
+
+@keyframes floatAnime {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes popAnime {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ローディング画面 */
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ぐるぐる */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ACE89E;
+  border-top: 6px solid #3cb371;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 最初はコンテンツ隠す */
+#content {
+  display: none;
+}
+
+
+
+.work-item , .album-phoo , .album-photoo , .album-photo{
+  transition: transform 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+.work-item:hover ,.album-phoo:hover ,.album-photo:hover ,.album-photoo:hover{
+  transform: scale(1.04);
+}
+
+body {
+  margin: 0;
+}
+
+/* 上に重なるページ */
+.loading1 {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  animation: disappear 1.5s ease forwards;
+  animation-delay: 2s;
+}
+
+/* 中央に吸い込まれる */
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.loading1 h1 {
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textIn 1.2s ease forwards;
+}
+
+/* 文字がふわっと出る */
+@keyframes textIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading1 h1 {
+  opacity: 0;
+  animation: spacing 1s ease forwards;
+}
+
+@keyframes spacing {
+  0% {
+    letter-spacing: 0;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 0.4em;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .loading1 h1{
+    font-size: 16px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

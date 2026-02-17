@@ -34,8 +34,7 @@
 
     .work-item a:hover img,
     .work-item a:focus img {
-      filter: brightness(0.7);
-      transform: scale(1.03);
+      filter: brightness(0.9);
     }
 
     .work-item a:hover::after,
@@ -45,6 +44,20 @@
   </style>
 </head>
 <body>
+
+<div class="loading1">
+  <h1>WELCOME</h1>
+</div>
+
+
+
+  <div id="loading">
+  <div class="spinner"></div>
+</div>
+
+<div id="content">
+</div>
+
   <header>
     <div class="logo">
       <a href="index.html">Koichi Nakahara</a>
@@ -208,6 +221,25 @@
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
   });
+
+  window.onload = function() {
+  const loader = document.getElementById("loading");
+  loader.style.opacity = "0";
+  loader.style.transition = "opacity 0.5s";
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 500);
+};
+
+window.addEventListener("load", () => {
+  const loading = document.querySelector(".loading1");
+
+  setTimeout(() => {
+    loading.remove();  // ← 完全削除
+  }, 3500); 
+});
   </script>
 
 
