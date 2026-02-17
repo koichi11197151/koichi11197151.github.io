@@ -240,6 +240,26 @@ window.addEventListener("load", () => {
     loading.remove();  // ← 完全削除
   }, 3500); 
 });
+
+window.addEventListener("load", () => {
+  const loading = document.querySelector(".loading1");
+
+  // すでに表示済みなら消す
+  if (sessionStorage.getItem("visited")) {
+    loading.remove();
+    return;
+  }
+
+  // 初回ならフラグを保存
+  sessionStorage.setItem("visited", "true");
+
+  // アニメーション後に削除
+  setTimeout(() => {
+    loading.remove();
+  }, 3500);
+});
+
+
   </script>
 
 
