@@ -916,9 +916,24 @@ body {
     font-size: 6px !important;
   }
 }
+@media (max-width: 800px){
+  .ifryou iframe{
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+}
+@media (max-width: 900px){
+.mainmain{
+    padding-top: 100px !important;
+  }
+}
 
-
-
+@media (max-width: 767px){
+.mainmain{
+    padding-top: 50px !important;
+  }
+}
 
 
 
