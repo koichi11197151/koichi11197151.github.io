@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>海</title>
+  <title>新春OP アルバム</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    .album-photo img {
-      display: block;
-    }
-
     .album-photo p {
-      text-align: center;
       margin-left: auto;
       margin-right: auto;
       width: 100%;
+    }
+    .album-photo p.photo-title {
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+    .album-photo p.photo-desc {
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 0;
+      color: #333;
+    }
+    .bunsyou{
+      margin-top: -40px;
+      margin-bottom: 60px;
+    }
+    .yic{
+      margin-bottom: 30px;
     }
   </style>
 </head>
@@ -46,30 +61,20 @@
   <nav class="breadcrumb" aria-label="パンくずリスト" style="margin: 24px 0 32px 0; text-align: center; font-size: 0.98em;">
     <a href="index.html" style="color: #226d44; text-decoration: none;">トップページ</a>
     &nbsp;&gt;&nbsp;
-    <a href="album3.html" style="color: #226d44; text-decoration: none;">風景アルバム</a>
-    &nbsp;&gt;&nbsp;
-    <span style="color: #888;">海</span>
+    <span style="color: #888;">新春OPアルバム<p>提出日 : 2026年1月7日 &nbsp;制作人数 : 3人</p></span>
   </nav>
-  <main>
+  <main> 
     <section class="album">
-      <h2 style="text-align: center;">海</h2>
-      <p style="display: block; text-align: center; font-weight: bold; margin: 0 0 8px 0; width: 100%;">
-      </p><br>
-      <div class="setumei">
-      <p class="cap" style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555; font-size: 14px;">
-        海の写真を集めたアルバムです。<br>広大な自然の美しさを感じていただければ幸いです。
+      <h2 class="yic" style="text-align: center;">新春OPアルバム</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555;">
+        12月初旬から1月7日までに3人で協力し制作した動画です。<br>私がリーダーを務め、動画分担では提供素材の調整と歴代理事長シーン作成と動画を繋ぐ役割を担いました。またチームをまとめ上げることの苦労を体験しました。
       </p>
-      </div>
       <div class="album-list" style="display: flex; gap: 24px; flex-wrap: wrap;">
-        <!-- ここから写真リスト -->
-        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <img src="images/nature/sea/6332.webp" alt="海写真１" style="width:100%; border-radius:10px;">
+        <div class="work-item" style="flex: 1 1 45%; min-width: 240px;">
+            <iframe class="op" width="560" height="315" src="https://www.youtube.com/embed/hwejoA9Pa08?si=_fFDkK3cDnYQLe98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </a>
+          <p style="text-align: center;">2026年1月7日に提出した山口青年会議所新春OP動画です。<br><span style="font-size:0.9em; color:#888;"></span></p>
         </div>
-        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px;">
-          <img src="images/nature/sea/8835.webp" alt="海写真２" style="width:100%; border-radius:10px;">
-        </div>
-
-        <!-- 他にも img フォルダ内の画像があれば同様に追加してください -->
       </div>
     </section>
   </main>
@@ -92,7 +97,6 @@
       <a href="https://www.tiktok.com/@sou_photo20" target="_blank" rel="noopener" class="sns-link" aria-label="TikTok">
         <i class="fab fa-tiktok"></i>
       </a>
-      <!-- 必要に応じて他SNSも追加可能 -->
     </div>
     <p>&copy; 2026 Koichi Nakahara</p>
   </footer>

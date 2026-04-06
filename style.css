@@ -263,8 +263,8 @@ section > form {
 /* 1. フッター全体の基本設定 */
 .footer {
   background-color: #234c2f;
-  padding: 60px 20px; /* 上下に余白を作って中身を押し出す */
-  color: #fff;        /* 全体の文字色を白に */
+  padding: 60px 20px; 
+  color: #fff;        
 }
 
 /* 2. ロゴの設定（文字色を白に変更） */
@@ -280,7 +280,7 @@ section > form {
 }
 
 .footer .logo a {
-  color: #fff !important; /* 強制的に白にする */
+  color: #fff !important; 
   text-decoration: none;
 }
 
@@ -291,12 +291,12 @@ section > form {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 80px; /* 150pxだと広すぎて画面からはみ出している可能性があるので少し詰めました */
+  gap: 80px;
 }
 
 .footer nav a {
   font-family: 'Shippori Mincho', serif;
-  color: #fff ; /* ★ここを白に変更 */
+  color: #fff ;
   text-decoration: none;
   border-bottom: 1.5px solid transparent;
   transition: color 0.2s, border-bottom 0.2s;
@@ -313,8 +313,8 @@ section > form {
   color: #fff !important;
 }
 .sns-link:hover {
-  color: #3cb371 !important; /* メニューと同じ明るい緑 */
-  transition: color 0.3s;    /* じわっと色を変える */
+  color: #3cb371 !important; 
+  transition: color 0.3s;    
 }
 
 .footer p {
@@ -332,7 +332,7 @@ section > form {
 
 
 
-/* レスポンシブコード */
+/* レスポンシブ */
 
 @media (max-width: 900px) {
   .logo{
@@ -417,11 +417,12 @@ section > form {
     padding-left: 100px;
   }
 }
+
+
 @media (max-width: 900px) {
-  /* セクション全体の巨大な余白をリセット */
   section {
-    max-width: 100vw !important; /* 画面幅いっぱいにする */
-    padding: 20px 15px !important; /* 上下20px、左右15pxの最低限の余白にする */
+    max-width: 100vw !important; 
+    padding: 20px 15px !important;
     margin: 20px auto !important;
   }
 
@@ -442,8 +443,8 @@ section > form {
 
   /* 「私らしく〜」のキャッチコピー部分 */
   .catch {
-    padding: 10px 15px !important; /* 内側の余白を減らす */
-    width: 90% !important; /* 幅を広げる */
+    padding: 10px 15px !important; 
+    width: 90% !important; 
     font-size: 10px;
     line-height: 1.5;
     display: flex;
@@ -548,6 +549,8 @@ section > form {
     max-width: 80vw;
   }
 }
+
+
 .logo {
   letter-spacing: -1px;
   }
@@ -566,6 +569,8 @@ section > form {
 .nocaption{
   margin-bottom: 70px;
 }
+
+
 @media (max-width: 767px) {
   .album-phoo{
     max-width: 80vw;
@@ -575,35 +580,43 @@ section > form {
   .album-phoo p{
   display: flex;
   justify-content: center;
+  }
+  .album-photoo{
+    max-width: 80vw;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+  }
+  .op{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .moviep p{
+    font-size: 8px !important;
+  }
+  .breadcrumb{
+    font-size: 12px !important;
+  }
+  .breadcrumb span{
+    font-size: 7px !important;
+  }
 }
-.album-photoo{
-  max-width: 80vw;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-.op{
-  width: 100% !important;
-  height: auto !important;
-}
-.moviep p{
-  font-size: 8px !important;
-}
-.breadcrumb{
-  font-size: 12px !important;
-}
-.breadcrumb span{
-  font-size: 7px !important;
-}
-}
+
+
 .contesturl a:hover{
   text-decoration: underline !important;
   color: #3cb371 !important;
 }
+
+
 @media (max-width: 1100px) {
   .album-photo .tsub{
   font-size: 8px !important;
+  }
 }
-}
+
+
+/* ハンバーガー */
+
 .hamburger {
   display: none;
   width: 32px;
@@ -626,6 +639,8 @@ section > form {
 .hamburger span:nth-child(1) { top: 0; }
 .hamburger span:nth-child(2) { top: 11px; }
 .hamburger span:nth-child(3) { bottom: 0; }
+
+
 
 @media (max-width: 767px) {
 
@@ -709,20 +724,24 @@ main{
 .header-nav{
   margin-right: 100px;
 }
+
+
 @media (max-width: 900px) {
   .header-nav{
     margin: 0 auto;
     margin-bottom: 20px;
     padding-right: 25px !important;
   }
-  
-
 }
+
+
 @media (max-width: 767px) {
   main{
     margin-top: 0px;
   }
 }
+
+
 header .logo{
   padding-right: 30px !important;
 }
@@ -738,6 +757,8 @@ header .logo{
   max-width: 90vw;
   margin-top: 70px !important;
 }
+
+
 @media (max-width: 900px) {
   .hoppu1{
     margin-right: 0px !important;
@@ -764,10 +785,12 @@ header .logo{
     font-size: 12px !important;
   }
 }
+
+
 .hero .btn {
-  
   animation: floatAnime 2s ease-in-out infinite;
 }
+
 
 @keyframes floatAnime {
   0% { transform: translateY(0); }
@@ -786,6 +809,8 @@ header .logo{
     transform: scale(1);
   }
 }
+
+
 /* ローディング画面 */
 #loading {
   position: fixed;
@@ -811,24 +836,21 @@ header .logo{
   to { transform: rotate(360deg); }
 }
 
+
 /* 最初はコンテンツ隠す */
 #content {
   display: none;
 }
-
-
-
 .work-item , .album-phoo , .album-photoo , .album-photo{
   transition: transform 0.8s cubic-bezier(.25,.8,.25,1);
 }
-
 .work-item:hover ,.album-phoo:hover ,.album-photo:hover ,.album-photoo:hover{
   transform: scale(1.04);
 }
-
 body {
   margin: 0;
 }
+
 
 /* 上に重なるページ */
 .loading1 {
@@ -840,10 +862,10 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-
   animation: disappear 1.5s ease forwards;
   animation-delay: 2s;
 }
+
 
 /* 中央に吸い込まれる */
 @keyframes disappear {
@@ -859,7 +881,6 @@ body {
 }
 
 .loading1 h1 {
-
   opacity: 0;
   transform: translateY(20px);
   animation: textIn 1.2s ease forwards;
@@ -908,6 +929,8 @@ body {
 .sotp{
   font-size: 12px;
 }
+
+
 @media (max-width: 600px) {
   .sop{
     font-size: 6px !important;
@@ -916,21 +939,25 @@ body {
     font-size: 6px !important;
   }
 }
+
+
 @media (max-width: 800px){
   .ifryou iframe{
     width: 100% !important;
     height: auto !important;
   }
-  
 }
+
+
 @media (max-width: 900px){
-.mainmain{
+  .mainmain{
     padding-top: 100px !important;
   }
 }
 
+
 @media (max-width: 767px){
-.mainmain{
+  .mainmain{
     padding-top: 50px !important;
   }
 }
