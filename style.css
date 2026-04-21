@@ -961,3 +961,15 @@ body {
     padding-top: 50px !important;
   }
 }
+/* ギャラリーページのsectionだけ背景を透明にする */
+.bgbest15 section {
+  background: transparent;
+  padding: 0;           /* 余白もリセットしてレンガを全面に見せる */
+  box-shadow: none;      /* もし影がついていたら消す */
+  max-width: 100%;      /* 幅の制限を解除してタイルを広げる */
+}
+
+/* 画像を囲むdivの背景も念のため透明に */
+.sub-gallery div {
+  background: transparent;
+}
