@@ -211,47 +211,44 @@
     <p>&copy; 2026 Koichi Nakahara</p>
   </footer>
   <script>
-  // --- ハンバーガーメニューの処理 ---
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loading");  // ぐるぐる
+    const welcome = document.querySelector(".loading1"); // Welcome
+    const content = document.getElementById("content");
+
+    // 1. まずコンテンツを裏で表示状態にする
+    if (content) content.style.display = "block";
+
+    // 2. 「ぐるぐる」は一瞬で消す（Welcomeにバトンタッチするため）
+    if (loader) {
+      loader.style.display = "none";
+    }
+
+    // 3. 初回訪問かどうかで Welcome の出し方を変える
+    if (sessionStorage.getItem("visited")) {
+      // 2回目以降：Welcomeをすぐ消してサイトを表示
+      if (welcome) welcome.remove();
+    } else {
+      // 1回目：Welcomeを出し、終わったら消す
+      sessionStorage.setItem("visited", "true");
+      
+      // 3.5秒後にWelcome画面を消し去る
+      setTimeout(() => {
+        if (welcome) {
+          welcome.style.opacity = "0";
+          welcome.style.transition = "opacity 0.8s";
+          setTimeout(() => welcome.remove(), 800);
+        }
+      }, 3500);
+    }
+  });
+
+  // --- ハンバーガーメニューの処理（ここはそのまま） ---
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.header-nav');
-
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
-  });
-
-  document.querySelectorAll('.header-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      nav.classList.remove('active');
-    });
-  });
-
-  // --- ローディング画面の処理 ---
-  window.addEventListener("load", () => {
-    // 使用しているローディングの要素IDに合わせてください（例: "loading"）
-    const loader = document.getElementById("loading");
-    
-    // セッションストレージの確認（初回のみローディングを出す）
-    if (sessionStorage.getItem("visited")) {
-      if (loader) loader.style.display = "none";
-      document.getElementById("content").style.display = "block";
-      return;
-    }
-
-    sessionStorage.setItem("visited", "true");
-
-    // ローディングを表示してから一定時間後に消す
-    setTimeout(() => {
-      if (loader) {
-        loader.style.opacity = "0";
-        loader.style.transition = "opacity 0.5s";
-        setTimeout(() => {
-          loader.style.display = "none";
-          document.getElementById("content").style.display = "block";
-        }, 500);
-      }
-    }, 3000); // 3秒後に消える設定
   });
 </script>
 </body>
