@@ -880,33 +880,22 @@ body {
   }
 }
 
+/* 文字のアニメーション（ふわっとして文字間隔が広がるのを1つに統合） */
 .loading1 h1 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: textIn 1.2s ease forwards;
+  animation: welcomeAnime 1.5s ease forwards;
 }
 
-/* 文字がふわっと出る */
-@keyframes textIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.loading1 h1 {
-  opacity: 0;
-  animation: spacing 1s ease forwards;
-}
-
-@keyframes spacing {
+@keyframes welcomeAnime {
   0% {
-    letter-spacing: 0;
     opacity: 0;
+    transform: translateY(20px); /* 少し下から */
+    letter-spacing: 0;           /* 間隔は普通 */
   }
   100% {
-    letter-spacing: 0.4em;
     opacity: 1;
+    transform: translateY(0);    /* 定位置へ */
+    letter-spacing: 0.4em;       /* 間隔を広げる */
   }
 }
 @media (max-width: 767px) {
@@ -961,15 +950,14 @@ body {
     padding-top: 50px !important;
   }
 }
-/* ギャラリーページのsectionだけ背景を透明にする */
+
 .bgbest15 section {
   background: transparent;
-  padding: 0;           /* 余白もリセットしてレンガを全面に見せる */
-  box-shadow: none;      /* もし影がついていたら消す */
-  max-width: 100%;      /* 幅の制限を解除してタイルを広げる */
+  padding: 0;          
+  box-shadow: none;     
+  max-width: 100%;      
 }
 
-/* 画像を囲むdivの背景も念のため透明に */
 .sub-gallery div {
   background: transparent;
 }
