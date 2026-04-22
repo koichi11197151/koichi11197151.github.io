@@ -211,57 +211,48 @@
     <p>&copy; 2026 Koichi Nakahara</p>
   </footer>
   <script>
+  // --- ハンバーガーメニューの処理 ---
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.header-nav');
-
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
   });
-  const navLinks = document.querySelectorAll('.header-nav a');
 
-  navLinks.forEach(link => {
+  document.querySelectorAll('.header-nav a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
       nav.classList.remove('active');
     });
   });
 
-
-  window.onload = function() {
+  // --- ローディング画面の処理 ---
+  window.addEventListener("load", () => {
+    // 使用しているローディングの要素IDに合わせてください（例: "loading"）
     const loader = document.getElementById("loading");
-    loader.style.opacity = "0";
-    loader.style.transition = "opacity 0.5s";
-
-    setTimeout(() => {
-      loader.style.display = "none";
-      document.getElementById("content").style.display = "block";
-    }, 500);
-  };
-
-  window.addEventListener("load", () => {
-    const loading = document.querySelector(".loading1");
-
-    setTimeout(() => {
-      loading.remove();  
-    }, 3500); 
-  });
-
-  window.addEventListener("load", () => {
-    const loading = document.querySelector(".loading1");
-
+    
+    // セッションストレージの確認（初回のみローディングを出す）
     if (sessionStorage.getItem("visited")) {
-    loading.remove();
-    return;
+      if (loader) loader.style.display = "none";
+      document.getElementById("content").style.display = "block";
+      return;
     }
 
     sessionStorage.setItem("visited", "true");
 
+    // ローディングを表示してから一定時間後に消す
     setTimeout(() => {
-    loading.remove();
-    }, 3500);
+      if (loader) {
+        loader.style.opacity = "0";
+        loader.style.transition = "opacity 0.5s";
+        setTimeout(() => {
+          loader.style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 500);
+      }
+    }, 3000); // 3秒後に消える設定
   });
-  </script>
+</script>
 </body>
 </html>
