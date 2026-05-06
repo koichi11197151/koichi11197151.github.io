@@ -44,9 +44,7 @@
 </head>
 <body>
 
-<div class="loading1">
-  <h1>WELCOME</h1>
-</div>
+
 
 
 
@@ -212,38 +210,19 @@
   </footer>
   <script>
   window.addEventListener("load", () => {
-    const loader = document.getElementById("loading");  // ぐるぐる
-    const welcome = document.querySelector(".loading1"); // Welcome
+    const loader = document.getElementById("loading");  
+    const welcome = document.querySelector(".loading1"); 
     const content = document.getElementById("content");
 
-    // 1. まずコンテンツを裏で表示状態にする
+
     if (content) content.style.display = "block";
 
-    // 2. 「ぐるぐる」は一瞬で消す（Welcomeにバトンタッチするため）
+
     if (loader) {
       loader.style.display = "none";
     }
-
-    // 3. 初回訪問かどうかで Welcome の出し方を変える
-    if (sessionStorage.getItem("visited")) {
-      // 2回目以降：Welcomeをすぐ消してサイトを表示
-      if (welcome) welcome.remove();
-    } else {
-      // 1回目：Welcomeを出し、終わったら消す
-      sessionStorage.setItem("visited", "true");
-      
-      // 3.5秒後にWelcome画面を消し去る
-      setTimeout(() => {
-        if (welcome) {
-          welcome.style.opacity = "0";
-          welcome.style.transition = "opacity 0.8s";
-          setTimeout(() => welcome.remove(), 800);
-        }
-      }, 3500);
-    }
   });
 
-  // --- ハンバーガーメニューの処理（ここはそのまま） ---
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.header-nav');
   hamburger.addEventListener('click', () => {
