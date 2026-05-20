@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>個人制作webサイト アルバム</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div id="loading">
+  <div class="spinner"></div>
+</div>
+  <header>
+    <div class="logo">
+      <a href="index.html">Koichi Nakahara</a>
+    </div>
+
+    <button class="hamburger" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header-nav">
+      <ul>
+       <li><a href="#about">自己紹介</a></li>
+       <li><a href="#skill">取得資格一覧</a></li>
+        <li><a href="#works">制作実績</a></li>
+       <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumb" aria-label="パンくずリスト" style="margin: 24px 0 32px 0; text-align: center; font-size: 0.98em;">
+    <a href="index.html" style="color: #226d44; text-decoration: none;">トップページ</a>
+    &nbsp;&gt;&nbsp;
+    <span style="color: #888;">個人制作webサイトアルバム</span>
+  </nav>
+  <main>
+    <section class="album">
+      <h2 style="text-align: center;">個人制作webサイトアルバム</h2>
+      <p style="display: block; text-align: center; font-weight: bold; margin: 0 0 8px 0; width: 100%;">
+        
+      </p><br>
+      <div class="setumei">
+      <p class="cap" style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: #555; font-size: 14px;">
+        個人で制作したwebサイトを閲覧できるアルバムです。
+      </p>
+      </div>
+      <div class="reader">
+      <div class="album-list" style=" max-width:80vw; display: flex; gap: 24px; flex-wrap: wrap;">
+
+        <div class="album-photo" style="flex: 1 1 45%; min-width: 240px; display: block; margin: 0 auto; padding: 10px;">
+          <a href="youtube.html">
+            <img src="images/nanasamune.webp" alt="ペット紹介サイト" style="aspect-ratio: 16 / 9; object-fit: cover; width:100%; border-radius:10px; cursor:pointer; ">
+          </a>
+          <div class="moviep">
+          <p style="display: flex; justify-content: center; font-size: 0.6em; font-weight: normal; margin: 0 auto; max-width: 80vw; margin-top: 10px;">
+            友達へのサプライズプレゼントで作ったペット紹介サイトです。
+          </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+    <div class="logo">
+      <a href="index.html" style=" color: inherit; text-decoration: none;">Koichi Nakahara</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">自己紹介</a></li>
+        <li><a href="index.html#skill">取得資格一覧</a></li>
+        <li><a href="index.html#works">制作実績</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="sns-footer" style="text-align: right;">
+      <a href="https://www.instagram.com/lxo1c_1n19/" target="_blank" rel="noopener" class="sns-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@sou_photo20" target="_blank" rel="noopener" class="sns-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+    <p>&copy; 2026 Koichi Nakahara</p>
+  </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.header-nav');
+
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+  window.onload = function() {
+  const loader = document.getElementById("loading");
+  loader.style.opacity = "0";
+  loader.style.transition = "opacity 0.5s";
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 500);
+};
+  </script>
+</body>
+</html>
