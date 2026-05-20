@@ -949,6 +949,14 @@ body {
   .mainmain{
     padding-top: 50px !important;
   }
+  .nanaimage img{
+    width: 100% !important;
+    margin: 0 auto!important;
+  }
+  .nanaimage{
+    display: block;
+    text-align: center;
+  }
 }
 
 .bgbest15 section {
@@ -961,3 +969,76 @@ body {
 .sub-gallery div {
   background: transparent;
 }
+
+.nana-gole{
+  text-align: left !important;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #111;
+}
+.nana-gole h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.nana-gole p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-top: 1px solid #111;
+}
+
+.nana-target{
+  text-align: left !important;
+  margin-right: 50px !important;
+  border-bottom: 1px solid #111;
+}
+.nana-target h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.nana-target p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-top: 1px solid #111;
+}
+
+.nana-concept{
+  text-align: left !important;
+  margin-left: 50px;
+  border-bottom: 1px solid #111;
+}
+.nana-concept h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.nana-concept p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-top: 1px solid #111;
+  
+}
+.nana-caption{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tarcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
