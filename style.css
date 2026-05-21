@@ -988,7 +988,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  border-top: 1px solid #111;
+  
 }
 
 .nana-target{
@@ -1007,7 +1007,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  border-top: 1px solid #111;
+  
 }
 
 .nana-concept{
@@ -1026,13 +1026,14 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  border-top: 1px solid #111;
+  
   
 }
 .nana-caption{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 90vw;
 }
 .tarcon{
   display: flex;
@@ -1041,4 +1042,38 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width : 767px){
+  .nana-caption{
+    max-width: 80vw !important;
+  }
+  .nana-gole h2{
+  font-size: 16px;
+  }
+  .nana-gole h3{
+    font-size: 10px;
+  }
+  .nana-gole p{
+    font-size: 8px;
+  }
 
+  .nana-target h2{
+  font-size: 16px;
+  }
+  .nana-target h3{
+    font-size: 10px;
+  }
+  .nana-target p{
+    font-size: 8px;
+  }
+  
+  .nana-concept h2{
+  font-size: 16px;
+  }
+  .nana-concept h3{
+    font-size: 10px;
+  }
+  .nana-concept p{
+    font-size: 8px;
+  }
+  
+}
