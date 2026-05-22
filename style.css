@@ -942,6 +942,7 @@ body {
   .mainmain{
     padding-top: 100px !important;
   }
+  
 }
 
 
@@ -975,57 +976,65 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #111;
+  
 }
 .nana-gole h3{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  margin-bottom: -5px;
 }
 .nana-gole p{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  border-top: 1px solid #111;
+  padding-top: 7px !important;
   
 }
 
 .nana-target{
   text-align: left !important;
   margin-right: 50px !important;
-  border-bottom: 1px solid #111;
+  
 }
 .nana-target h3{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  margin-bottom: -5px;
 }
 .nana-target p{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  
+  border-top: 1px solid #111;
+  padding-top: 7px !important;
 }
 
 .nana-concept{
   text-align: left !important;
   margin-left: 50px;
-  border-bottom: 1px solid #111;
+  
 }
 .nana-concept h3{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  margin-bottom: -5px;
 }
 .nana-concept p{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  border-top: 1px solid #111;
+  padding-top: 7px !important;
   
   
 }
@@ -1038,42 +1047,51 @@ body {
 .tarcon{
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width : 767px){
   .nana-caption{
     max-width: 80vw !important;
+    margin: 0 auto;
   }
   .nana-gole h2{
-  font-size: 16px;
+  font-size: 14px;
   }
   .nana-gole h3{
-    font-size: 10px;
+    font-size: 8px;
   }
   .nana-gole p{
-    font-size: 8px;
+    font-size: 6px;
   }
 
+  .nana-target{
+    margin-right: -20px !important;
+  }
   .nana-target h2{
-  font-size: 16px;
+  font-size: 14px;
   }
   .nana-target h3{
-    font-size: 10px;
+    font-size: 8px;
   }
   .nana-target p{
-    font-size: 8px;
+    font-size: 6px;
   }
   
   .nana-concept h2{
-  font-size: 16px;
+  font-size: 14px;
   }
   .nana-concept h3{
-    font-size: 10px;
-  }
-  .nana-concept p{
     font-size: 8px;
   }
-  
+  .nana-concept p{
+    font-size: 6px;
+  }
+  .tarcon{
+    margin-top: -50px;
+  }
+  .akusesu{
+    font-size: 10px !important;
+  }
 }
