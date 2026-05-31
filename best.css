@@ -94,9 +94,7 @@
 
 
 
-.bgbest15{
-  background-image: url(img/best/stone-tile01.jpg);
-}
+
 
 .besttext {
 
@@ -167,6 +165,9 @@
 .sugoi .ohmy{
   padding: 5px 3px 5px 5px !important;
   margin-top: -60px;
+}
+.cricksize{
+  font-size: 8px !important;
 }
 
 }
